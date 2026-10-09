@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BMS Active | Cabling, Wireless & Security Systems | London</title>
+<meta name="description" content="BMS Active installs structured cabling, wireless access points and CCTV & security systems for homes and businesses across London and the South East. Request a free site survey.">
+<meta name="theme-color" content="#0A1330">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A1330'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='800' font-style='italic' font-size='30' text-anchor='middle' fill='%232DD4F0'%3EB%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#0A1330; --bg2:#0F1E4A; --card:#101B3F; --line:#22305F;
+  --text:#E8EEFB; --muted:#9FB0D3; --cyan:#2DD4F0; --blue:#3B82F6;
+  --grad:linear-gradient(90deg,#2DD4F0,#3B82F6);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--cyan)}
+.wrap{width:100%;max-width:1040px;margin:0 auto;padding:0 20px}
+.banner{background:#0d1a42;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted);text-align:center;padding:8px 16px}
+header.hero{background:radial-gradient(1200px 500px at 80% -10%,#16327a55,transparent 60%),linear-gradient(180deg,var(--bg),var(--bg2));padding:56px 0 64px;border-bottom:3px solid transparent;border-image:var(--grad) 1}
+.hero .wrap{display:grid;gap:36px;align-items:center}
+.logo{width:min(300px,70vw);height:auto;display:block}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.15;margin:0 0 16px;letter-spacing:-.01em}
+h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--muted);font-size:18px;max-width:560px;margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;background:var(--grad);color:#04122e;font-weight:700;padding:14px 22px;border-radius:10px;text-decoration:none;border:0;font-size:16px;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
+section{padding:64px 0}
+h2{font-size:clamp(24px,3.5vw,32px);margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 32px;max-width:620px}
+.cards{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+.card h3{margin:0 0 8px;font-size:19px}
+.card p{margin:0;color:var(--muted)}
+.icon{width:40px;height:40px;border-radius:10px;background:#0b2352;display:grid;place-items:center;margin-bottom:14px;color:var(--cyan)}
+.icon svg{width:22px;height:22px}
+.alt{background:linear-gradient(180deg,var(--bg2),var(--bg))}
+.steps{counter-reset:s;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));list-style:none;margin:0;padding:0}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;position:relative}
+.steps li::before{content:counter(s);display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--grad);color:#04122e;font-weight:800;margin-bottom:12px}
+.steps h3{margin:0 0 6px;font-size:18px}
+.steps p{margin:0;color:var(--muted)}
+.contact{display:grid;gap:32px;grid-template-columns:1fr}
+@media(min-width:860px){.hero .wrap{grid-template-columns:1.2fr .8fr}.contact{grid-template-columns:.9fr 1.1fr}}
+form{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;display:grid;gap:16px}
+label{display:grid;gap:6px;font-weight:600;font-size:14px}
+input,select,textarea{font:inherit;color:var(--text);background:#0B1636;border:1px solid var(--line);border-radius:10px;padding:12px 14px;width:100%}
+textarea{min-height:120px;resize:vertical}
+.row{display:grid;gap:16px}
+@media(min-width:560px){.row{grid-template-columns:1fr 1fr}}
+.hint{font-size:13px;color:var(--muted);font-weight:400}
+.hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+#status{min-height:24px;font-weight:600}
+#status.ok{color:#6EE7A8}#status.err{color:#FCA5A5}
+ul.ticks{list-style:none;padding:0;margin:0 0 20px;display:grid;gap:10px}
+ul.ticks li{padding-left:28px;position:relative;color:var(--muted)}
+ul.ticks li::before{content:"";position:absolute;left:0;top:8px;width:14px;height:8px;border-left:3px solid var(--cyan);border-bottom:3px solid var(--cyan);transform:rotate(-45deg)}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="banner">Our full website is coming soon. In the meantime, you can reach us using the form below.</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Cabling, wireless and security systems for <span>London &amp; the South East</span></h1>
+      <p class="lead">BMS Active installs and tests structured cabling, wireless access points and CCTV &amp; security systems for homes and businesses, to a clean, documented standard.</p>
+      <div class="btns">
+        <a class="btn" href="#contact">Request a free site survey</a>
+        <a class="btn ghost" href="#services">What we do</a>
+      </div>
+    </div>
+    <svg class="logo" role="img" aria-label="BMS Active" viewBox="0 0 748.4 430.8" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="60" y1="0" x2="688.4200000000001" y2="0"><stop offset="0" stop-color="#2DD4F0"/><stop offset="1" stop-color="#3B82F6"/></linearGradient></defs>
+<path d="M64.16 242.0 100.56 60.0H192.6Q223.54 60.0 239.66 71.05Q255.78 82.1 255.78 102.63999999999999Q255.78 119.53999999999999 246.42000000000002 131.24Q237.84 142.16 223.28 148.14Q228.48000000000002 150.48 232.9 153.6Q247.72 164.51999999999998 247.72 184.27999999999997Q247.72 204.04 236.67000000000002 216.78Q225.62 229.52 206.77 235.76Q187.92000000000002 242.0 164.26 242.0ZM122.4 204.82H167.12Q180.64 204.82 188.57 199.36Q196.5 193.9 196.5 183.24Q196.5 175.18 190.52 171.54Q184.54000000000002 167.89999999999998 175.18 167.89999999999998H129.68ZM136.96 132.28H173.88Q182.98000000000002 132.28 189.35000000000002 129.94Q195.72 127.6 198.84 122.91999999999999Q201.96 118.24 201.96 111.47999999999999Q201.96 103.94 196.24 100.56Q190.52 97.18 180.38 97.18H143.98000000000002Z M268.00000000000006 242.0 304.40000000000003 60.0H346.26000000000005L388.90000000000003 165.3L471.58000000000004 60.0H515.52L479.64000000000004 242.0H432.06000000000006L450.78000000000003 146.06L390.20000000000005 224.06H367.58000000000004L334.56000000000006 146.06L315.32000000000005 242.0Z M587.8000000000001 245.64Q572.2 245.64 557.9000000000001 243.17Q543.6000000000001 240.7 531.9000000000001 236.14999999999998Q520.2 231.6 511.8800000000001 226.14L532.1600000000001 187.66Q541.5200000000001 193.38 551.5300000000001 197.41Q561.5400000000001 201.44 571.94 203.51999999999998Q582.3400000000001 205.6 592.7400000000001 205.6Q602.6200000000001 205.6 609.6400000000001 203.64999999999998Q616.6600000000001 201.7 620.3000000000001 198.06Q623.94 194.42000000000002 623.94 189.48Q623.94 184.01999999999998 619.1300000000001 180.76999999999998Q614.32 177.51999999999998 606.52 175.18Q598.72 172.84 589.23 170.37Q579.7400000000001 167.89999999999998 570.2500000000001 164.39Q560.7600000000001 160.88 552.96 155.55Q545.1600000000001 150.22 540.3500000000001 141.89999999999998Q535.5400000000001 133.57999999999998 535.5400000000001 121.36Q535.5400000000001 101.6 546.2 87.03999999999999Q556.8600000000001 72.47999999999999 576.4900000000001 64.41999999999999Q596.1200000000001 56.359999999999985 622.9000000000001 56.359999999999985Q642.4000000000001 56.359999999999985 659.3000000000001 60.389999999999986Q676.2 64.41999999999999 688.4200000000001 71.96000000000001L669.7 110.18Q659.0400000000001 103.41999999999999 646.1700000000001 99.91Q633.3000000000001 96.4 619.7800000000001 96.4Q609.3800000000001 96.4 601.97 98.74Q594.5600000000001 101.07999999999998 590.7900000000001 105.10999999999999Q587.0200000000001 109.13999999999999 587.0200000000001 114.08Q587.0200000000001 119.28 591.7 122.66Q596.3800000000001 126.03999999999999 604.3100000000002 128.38Q612.2400000000001 130.72 621.73 133.19Q631.22 135.66 640.58 138.91Q649.94 142.16 658.0 147.49Q666.0600000000001 152.82 670.74 160.88Q675.4200000000001 168.94 675.4200000000001 180.9Q675.4200000000001 200.4 664.7600000000001 214.96Q654.1000000000001 229.52 634.3400000000001 237.57999999999998Q614.58 245.64 587.8000000000001 245.64Z" fill="#FFFFFF"/>
+<path d="M53.448 370.8 100.45599999999999 298.0H117.19999999999999L135.088 370.8H118.24L114.80799999999999 355.2H80.904L71.44 370.8ZM112.0 342.408 105.864 314.32800000000003 88.704 342.408Z M225.7448 372.048Q214.6168 372.048 206.5568 368.044Q198.4968 364.04 194.1288 356.91600000000005Q189.76080000000002 349.79200000000003 189.76080000000002 340.432Q189.76080000000002 331.17600000000004 193.03680000000003 323.168Q196.3128 315.16 202.2928 309.284Q208.27280000000002 303.408 216.54080000000002 300.08000000000004Q224.80880000000002 296.752 235.00080000000003 296.752Q244.7768 296.752 252.26479999999998 300.08000000000004Q259.7528 303.408 263.6008 309.648L251.43280000000001 319.632Q248.6248 315.47200000000004 244.2568 313.288Q239.8888 311.10400000000004 233.85680000000002 311.10400000000004Q227.7208 311.10400000000004 222.7288 313.236Q217.73680000000002 315.368 214.14880000000002 319.26800000000003Q210.56080000000003 323.168 208.68880000000001 328.368Q206.8168 333.568 206.8168 339.392Q206.8168 344.904 209.2088 349.012Q211.60080000000002 353.12 216.17680000000001 355.408Q220.7528 357.696 227.20080000000002 357.696Q232.8168 357.696 237.7048 355.668Q242.5928 353.64 246.5448 349.272L256.52880000000005 359.464Q250.80880000000002 366.12 242.95680000000002 369.084Q235.1048 372.048 225.7448 372.048Z M323.5776 370.8 335.3296 311.728H312.03360000000004L314.8416 298.0H378.2816L375.47360000000003 311.728H352.2816L340.42560000000003 370.8Z M417.5624 370.8 432.1224 298.0H449.0744L434.5144 370.8Z M518.3072000000001 370.8 501.4592 298.0H518.8272000000001L530.5792 349.896L563.5472 298.0H581.0192000000001L534.9472000000001 370.8Z M638.2919999999999 357.28000000000003H678.02L675.212 370.8H618.8439999999999L633.404 298.0H688.42L685.612 311.52000000000004H647.444L644.324 327.32800000000003H678.124L675.524 340.432H641.62Z" fill="url(#g)"/>
+</svg>
+  </div>
+</header>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="sub">Practical installation and fault-finding for the systems your building depends on.</p>
+    <div class="cards">
+      <article class="card">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01M11 7h6M11 17h6"/></svg></div>
+        <h3>Structured cabling</h3>
+        <p>Cat6 installation, routing, termination, patching, labelling and testing, with clear records at handover.</p>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/><path d="M2 9a14 14 0 0 1 20 0"/></svg></div>
+        <h3>Wireless networks</h3>
+        <p>Access point installation and replacement, with the cabling run to each position and every device labelled.</p>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.2 7.8-8 9-4.8-1.2-8-4.5-8-9V6l8-3z"/><circle cx="12" cy="11" r="2.5"/></svg></div>
+        <h3>CCTV &amp; security systems</h3>
+        <p>Camera and security system installation for homes and businesses, set up and tested so it works as it should.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="how">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <p class="sub">A simple process, so you know what to expect.</p>
+    <ol class="steps">
+      <li><h3>Survey</h3><p>Tell us what you need. We look at the site and talk through the options with you.</p></li>
+      <li><h3>Quote</h3><p>You receive a clear written quote for the work before anything starts.</p></li>
+      <li><h3>Install &amp; test</h3><p>We install, test and label everything, leave the site tidy and hand over the records.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <div>
+      <h2>Request a free site survey</h2>
+      <p class="sub">Tell us a little about the job and we will get back to you as soon as we can.</p>
+      <ul class="ticks">
+        <li>London and the South East</li>
+        <li>Homes and small to medium businesses</li>
+        <li>Clear written quotes before work starts</li>
+        <li>Founded by an infrastructure engineer with nearly 20 years of field experience</li>
+      </ul>
+    </div>
+    <form id="enquiry" action="https://api.web3forms.com/submit" method="POST" novalidate>
+      <input type="hidden" name="access_key" value="fd0e8e93-bfd3-4b29-92ea-022a73cae50e">
+      <input type="hidden" name="subject" value="New enquiry from bmsactive.com">
+      <input type="hidden" name="from_name" value="BMS Active website">
+      <div class="hp" aria-hidden="true"><label>Leave this empty <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label></div>
+      <div class="row">
+        <label>Your name *<input name="name" required autocomplete="name"></label>
+        <label>Email *<input type="email" name="email" required autocomplete="email"></label>
+      </div>
+      <div class="row">
+        <label>Phone (optional)<input type="tel" name="phone" autocomplete="tel"></label>
+        <label>Postcode or area *<input name="area" required autocomplete="postal-code"></label>
+      </div>
+      <label>What do you need? *
+        <select name="service" required>
+          <option value="" disabled selected>Select one</option>
+          <option>Free site survey</option>
+          <option>Structured cabling</option>
+          <option>Wireless / access points</option>
+          <option>CCTV &amp; security systems</option>
+          <option>Something else</option>
+        </select>
+      </label>
+      <label>Tell us about the job *<textarea name="message" required placeholder="For example: number of rooms, what is already installed, and when you need it done."></textarea></label>
+      <p class="hint">We only use your details to reply to your enquiry and will not share them. Please do not send sensitive information through this form.</p>
+      <button class="btn" type="submit">Send enquiry</button>
+      <div id="status" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="yr">2026</span> BMS Active. BMS Active is a trading name of Vural Kircali, London, UK.</span>
+    <span><a href="https://www.linkedin.com/company/bmsactive" target="_blank" rel="noopener">LinkedIn</a> &middot; Cabling &middot; Wireless &middot; Security &amp; CCTV</span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+const form = document.getElementById('enquiry'), status = document.getElementById('status');
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  status.className = ''; status.textContent = '';
+  if (!form.checkValidity()) { form.reportValidity(); return; }
+  const btn = form.querySelector('button'); btn.disabled = true; btn.textContent = 'Sending...';
+  try {
+    const res = await fetch(form.action, { method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(form) });
+    const data = await res.json();
+    if (res.ok && data.success) {
+      status.className = 'ok'; status.textContent = 'Thank you. Your enquiry has been sent and we will be in touch soon.';
+      form.reset();
+    } else { throw new Error(data.message || 'Failed'); }
+  } catch (err) {
+    status.className = 'err'; status.textContent = 'Sorry, something went wrong. Please try again in a moment.';
+  } finally { btn.disabled = false; btn.textContent = 'Send enquiry'; }
+});
+</script>
+</body>
+</html>
